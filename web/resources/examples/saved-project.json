@@ -1,0 +1,121 @@
+{
+  "name": "Novo Projeto",
+  "appVersion": "0.3.1",
+  "projectFileFormatVersion": 1,
+  "unitSystem": 0,
+  "displayUnits": {
+    "length": 1,
+    "force": 1,
+    "moment": 1,
+    "distributedLoad": 1,
+    "stress": 1,
+    "elasticModulus": 2,
+    "area": 1,
+    "inertia": 1
+  },
+  "nextIds": {
+    "node": 398,
+    "beam": 3090,
+    "distributedLoad": 558,
+    "dimension": 69,
+    "material": 3,
+    "section": 3
+  },
+  "nodes": [
+    {
+      "id": 395,
+      "x": -50.420501708984378,
+      "y": -27.46466827392578,
+      "support": 0,
+      "load": {
+        "fx": 0.0,
+        "fy": 0.0,
+        "mz": 0.0
+      }
+    },
+    {
+      "id": 396,
+      "x": -30.420501708984376,
+      "y": -27.46466827392578,
+      "support": 4,
+      "load": {
+        "fx": 0.0,
+        "fy": 0.0,
+        "mz": 0.0
+      }
+    },
+    {
+      "id": 397,
+      "x": -50.420501708984378,
+      "y": -37.46466827392578,
+      "support": 0,
+      "load": {
+        "fx": 100000.0,
+        "fy": 0.0,
+        "mz": 0.0
+      }
+    }
+  ],
+  "beams": [
+    {
+      "id": 3088,
+      "startNodeId": 395,
+      "endNodeId": 396,
+      "materialId": 1,
+      "sectionId": 1,
+      "originalBeamId": -1,
+      "discretizationMethod": 0,
+      "discretizationParts": 10,
+      "discretizationMaxDistance": 0.5,
+      "discretizationDistanceUnit": 0,
+      "imperfectionMethod": 1,
+      "imperfectionAmplitude": 2.0,
+      "imperfectionAmplitudeUnit": 0
+    },
+    {
+      "id": 3089,
+      "startNodeId": 395,
+      "endNodeId": 397,
+      "materialId": 1,
+      "sectionId": 1,
+      "originalBeamId": -1,
+      "discretizationMethod": 0,
+      "discretizationParts": 10,
+      "discretizationMaxDistance": 0.5,
+      "discretizationDistanceUnit": 0,
+      "imperfectionMethod": 1,
+      "imperfectionAmplitude": 2.0,
+      "imperfectionAmplitudeUnit": 0
+    }
+  ],
+  "distributedLoads": [],
+  "dimensions": [],
+  "materials": [
+    {
+      "id": 1,
+      "name": "Concreto",
+      "youngModulus": 30000000000.0,
+      "thermalExpansion": 0.00001
+    },
+    {
+      "id": 2,
+      "name": "Aço",
+      "youngModulus": 200000000000.0,
+      "thermalExpansion": 0.000012
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "name": "Seção 20x40 cm",
+      "area": 0.08000000000000002,
+      "inertia": 0.001066666666666667
+    },
+    {
+      "id": 2,
+      "name": "Perfil tubular",
+      "area": 0.012,
+      "inertia": 0.000025
+    }
+  ]
+}
